@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "black": {
+      "format": "color-hex"
+    },
+    "white": {
+      "format": "color-hex"
+    },
+    "gray": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "blue": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "green": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "yellow": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "orange": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "red": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "purple": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "pink": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    }
+  }
+}
