@@ -202,23 +202,77 @@ function getTheme({ style, name }) {
       "welcomePage.buttonHoverBackground": primer.gray[2],
     },
     semanticHighlighting: true,
+    semanticTokenColors: {
+      "*.static": {
+        fontStyle: "italic",
+      },
+    },
     tokenColors: [
       {
-        scope: ["comment", "punctuation.definition.comment", "string.comment"],
+        scope: ["comment", "punctuation.definition.comment", "string.comment", "storage.type.class.jsdoc"],
         settings: {
-          foreground: pick({ light: primer.gray[5], dark: primer.gray[4] }),
+          foreground: pick({ light: "#8C8C8C", dark: primer.gray[4] }),
         },
       },
       {
-        scope: ["constant", "entity.name.constant", "variable.other.constant", "variable.language"],
+        scope: ["storage.type.class.jsdoc"],
         settings: {
-          foreground: primer.blue[6],
+          fontStyle: "italic",
         },
       },
       {
-        scope: ["entity", "entity.name"],
+        scope: ["variable.other.jsdoc"],
         settings: {
-          foreground: pick({ light: primer.purple[5], dark: primer.purple[6] }),
+          foreground: primer.gray[8],
+        },
+      },
+      {
+        scope: ["comment.line.double-slash"],
+        settings: {
+          fontStyle: "italic",
+        },
+      },
+      {
+        scope: ["variable.language", "variable.other.readwrite", "variable.parameter", "keyword.operator"],
+        settings: {
+          foreground: primer.black,
+        },
+      },
+      {
+        scope: ["variable.other.constant", "variable.other.enummember"],
+        settings: {
+          foreground: primer.violet[9],
+          fontStyle: "italic",
+        },
+      },
+      // {
+      //   scope: ["entity.name.type.class"],
+      //   settings: {
+      //     foreground: pick({ light: primer.black, dark: primer.purple[6] }),
+      //   },
+      // },
+      {
+        scope: ["meta.decorator", "support.type"],
+        settings: {
+          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+        },
+      },
+      {
+        scope: ["meta.decorator"],
+        settings: {
+          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+        },
+      },
+      {
+        scope: ["meta.decorator entity.name.function"],
+        settings: {
+          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+        },
+      },
+      {
+        scope: ["entity.name.function.member"],
+        settings: {
+          foreground: pick({ light: "#00627A", dark: "#00627A" }),
         },
       },
       {
@@ -234,15 +288,27 @@ function getTheme({ style, name }) {
         },
       },
       {
-        scope: "keyword",
+        scope: [
+          "keyword",
+          "keyword.operator.new",
+          "storage.modifier",
+          "storage.type.property",
+          "storage.type.class",
+          "meta.var.expr storage.type",
+          "storage.type.enum",
+          "variable.language.this",
+          "constant.language",
+          "support.type.primitive",
+        ],
         settings: {
-          foreground: pick({ light: primer.red[5], dark: primer.red[6] }),
+          foreground: pick({ light: primer.blue[6], dark: primer.red[6] }),
+          fontStyle: "",
         },
       },
       {
-        scope: ["storage", "storage.type"],
+        scope: ["constant.numeric"],
         settings: {
-          foreground: pick({ light: primer.red[5], dark: primer.red[6] }),
+          foreground: pick({ light: primer.blue[5], dark: primer.red[5] }),
         },
       },
       {
@@ -254,31 +320,19 @@ function getTheme({ style, name }) {
       {
         scope: ["string", "punctuation.definition.string", "string punctuation.section.embedded source"],
         settings: {
-          foreground: pick({ light: primer.blue[8], dark: "#9ecbff" }),
+          foreground: pick({ light: "#067D17", dark: "#9ecbff" }),
         },
       },
       {
-        scope: "support",
+        scope: ["variable.other.property"],
         settings: {
-          foreground: primer.blue[6],
+          foreground: pick({ light: primer.violet[9], dark: primer.violet[9] }),
         },
       },
       {
         scope: "meta.property-name",
         settings: {
           foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "variable",
-        settings: {
-          foreground: primer.orange[6],
-        },
-      },
-      {
-        scope: "variable.other",
-        settings: {
-          foreground: editorForeground,
         },
       },
       {

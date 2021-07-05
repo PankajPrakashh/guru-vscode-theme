@@ -1,6 +1,12 @@
 {
   "type": "object",
   "properties": {
+    "custom": {
+      "type": "object",
+      "additionalProperties": {
+        "format": "color-hex"
+      }
+    },
     "black": {
       "format": "color-hex"
     },
@@ -50,6 +56,12 @@
       }
     },
     "pink": {
+      "type": "array",
+      "items": {
+        "format": "color-hex"
+      }
+    },
+    "violet": {
       "type": "array",
       "items": {
         "format": "color-hex"

@@ -2,6 +2,10 @@
   "$schema": "./colors.schema.json",
   "black": "#1b1f23",
   "white": "#fff",
+  "custom": {
+    "background": "#fafafa",
+    "border": "#f7f6f6"
+  },
   "gray": [
     "#fafbfc",
     "#f6f8fa",
@@ -20,7 +24,7 @@
     "#c8e1ff",
     "#79b8ff",
     "#2188ff",
-    "#0366d6",
+    "#0366d6", 
     "#005cc5",
     "#044289",
     "#032f62",
@@ -85,6 +89,18 @@
     "#4c2889",
     "#3a1d6e",
     "#29134e"
+  ],
+  "violet": [
+    "#f3e7f4",
+    "#e7cfea",
+    "#dbb7df",
+    "#cf9fd4",
+    "#c388ca",
+    "#b770bf",
+    "#ab58b4",
+    "#9f40a9",
+    "#93289f",
+    "#871094"
   ],
   "pink": [
     "#ffeef8", 

@@ -14,10 +14,16 @@
       {
         "label": "Guru Light",
         "uiTheme": "vs",
-        "path": "./themes/light.json"
+        "path": "./themes/light-color-theme.json"
       }
     ]
   },
+  "keywords": [
+    "theme",
+    "github",
+    "intellij",
+    "light"
+  ],
   "devDependencies": {
     "@primer/primitives": "^4.5.1",
     "chroma-js": "^2.1.2",
