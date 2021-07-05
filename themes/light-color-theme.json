@@ -242,7 +242,8 @@
         "keyword.operator.expression",
         "variable.language.super",
         "constant.language.boolean",
-        "variable.language.java"
+        "variable.language.java",
+        "support.variable"
       ],
       "settings": {
         "foreground": "#0033B3"

@@ -1,14 +1,23 @@
 {
   "name": "guru-vscode-theme",
-  "displayName": "Guru Theme",
+  "displayName": "Guru Light",
   "description": "VSCode theme inspired from Github VSCode theme and IntelliJ",
   "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "pankajprakashh",
   "engines": {
     "vscode": "^1.57.0"
   },
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PankajPrakashh/guru-vscode-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/PankajPrakashh/guru-vscode-theme/issues"
+  },
   "contributes": {
     "themes": [
       {
