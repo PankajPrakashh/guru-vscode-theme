@@ -3,7 +3,7 @@
 VSCode theme inspired from Github and IntelliJ idea. 
 
 ## Screenshots
-![ScreenShot](/screenshots/light.png)
+![ScreenShot](https://github.com/PankajPrakashh/guru-vscode-theme/raw/master/screenshots/light.png)
 
 ## Install
 1. Go to [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=pankajprakashh.guru-vscode-theme).
